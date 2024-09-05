@@ -1,15 +1,4 @@
 class Homework {
-    public static int years(int year){
-        if (year < 1584) {
-            System.out.println(year + " год не является високосным");
-        } else if ((year % 4 == 0 && year % 100 > 0) || year % 400 == 0) {
-            System.out.println(year + "год является високосным");
-        } else {
-            System.out.println(year + " год не является високосным");
-        }
-        return year;
-    }
-
     public static void main(String[] args){
         System.out.println("task 1");
         int year = 2023;
@@ -24,6 +13,17 @@ class Homework {
         int deliveryDistance = 95;
         Distance(deliveryDistance);
         }
+
+    public static int years(int year){
+        if (year < 1584) {
+            System.out.println(year + " год не является високосным");
+        } else if ((year % 4 == 0 && year % 100 > 0) || year % 400 == 0) {
+            System.out.println(year + "год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
+        }
+        return year;
+    }
 
 public static int OSAndClientDeviceYear(int OS, int clientDeviceYear){
     if (OS == 0 && clientDeviceYear < 2015) {
