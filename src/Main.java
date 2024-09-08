@@ -14,7 +14,7 @@ class Homework {
         Distance(deliveryDistance);
         }
 
-    public static int years(int year){
+    public static void years(int year){
         if (year < 1584) {
             System.out.println(year + " год не является високосным");
         } else if ((year % 4 == 0 && year % 100 > 0) || year % 400 == 0) {
@@ -22,10 +22,9 @@ class Homework {
         } else {
             System.out.println(year + " год не является високосным");
         }
-        return year;
     }
 
-public static int OSAndClientDeviceYear(int OS, int clientDeviceYear){
+public static void OSAndClientDeviceYear(int OS, int clientDeviceYear){
     if (OS == 0 && clientDeviceYear < 2015) {
         System.out.println("Установите облегченную версию приложения для iOS по ссылке");
     } else if (OS == 0 && clientDeviceYear >= 2015) {
@@ -35,10 +34,9 @@ public static int OSAndClientDeviceYear(int OS, int clientDeviceYear){
     } else {
         System.out.println("Установите облегченную версию приложения для Android по ссылке");
 }
-    return OS;
 }
 
-    public static int Distance(int deliveryDistance){
+    public static void Distance(int deliveryDistance){
         if (deliveryDistance < 20) {
             int day = 1;
             System.out.println("Потребуется дней:" + day);
@@ -51,7 +49,5 @@ public static int OSAndClientDeviceYear(int OS, int clientDeviceYear){
         } else {
             System.out.println("доставки нет");
     }
-
-        return deliveryDistance;
     }
 }
