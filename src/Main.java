@@ -36,18 +36,22 @@ public static void OSAndClientDeviceYear(int OS, int clientDeviceYear){
 }
 }
 
-    public static void Distance(int deliveryDistance){
+    public static int Distance(int deliveryDistance){
         if (deliveryDistance < 20) {
             int day = 1;
             System.out.println("Потребуется дней:" + day);
+            return 1;
         } else if (deliveryDistance > 20 && deliveryDistance < 60) {
             int day = 2;
             System.out.println("Потребуется дней:" + day);
+            return 2;
         } else if (deliveryDistance > 60 && deliveryDistance < 100) {
             int day = 3;
             System.out.println("Потребуется дней:" + day);
+            return 4;
         } else {
             System.out.println("доставки нет");
     }
+        return deliveryDistance;
     }
 }
