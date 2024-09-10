@@ -10,8 +10,8 @@ class Homework {
         OSAndClientDeviceYear(OS, clientDeviceYear);
         System.out.println();
         System.out.println("task 3");
-        int deliveryDistance = 95;
-        Distance(deliveryDistance);
+        int deliveryDistance = distance(95);
+        System.out.println(deliveryDistance);
         }
 
     public static void years(int year){
@@ -36,22 +36,21 @@ public static void OSAndClientDeviceYear(int OS, int clientDeviceYear){
 }
 }
 
-    public static int Distance(int deliveryDistance){
+    public static int distance(int deliveryDistance){
         if (deliveryDistance < 20) {
-            int day = 1;
-            System.out.println("Потребуется дней:" + day);
             return 1;
         } else if (deliveryDistance > 20 && deliveryDistance < 60) {
-            int day = 2;
-            System.out.println("Потребуется дней:" + day);
             return 2;
         } else if (deliveryDistance > 60 && deliveryDistance < 100) {
-            int day = 3;
-            System.out.println("Потребуется дней:" + day);
-            return 4;
+            return 3;
         } else {
-            System.out.println("доставки нет");
+            return -1;
     }
-        return deliveryDistance;
     }
 }
+
+
+
+
+
+
